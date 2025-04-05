@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  --page-px: 15px;
+
+  --primary: #2b7fff;
+}
