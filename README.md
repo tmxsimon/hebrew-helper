@@ -8,8 +8,10 @@ cd backend
 
 ### Create and activate a virtual environment
 python -m venv .venv
-source .venv/bin/activate   # On Linux/Mac
-.venv\Scripts\activate      # On Windows
+(linux/mac)
+source .venv/bin/activate
+(windows)
+.venv\Scripts\activate
 
 ### Install dependencies
 pip install -r requirements.txt
