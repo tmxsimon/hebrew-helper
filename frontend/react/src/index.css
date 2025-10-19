@@ -1,7 +1,28 @@
 @import "tailwindcss";
 
-:root {
-  --page-px: 15px;
+@theme inline {
+  --color-primary: var(--primary);
+  --color-main: var(--main);
+  --color-text: var(--text);
+  --spacing-page-px: 15px;
+}
 
-  --primary: #2b7fff;
+@layer base {
+  :root {
+    main {
+      min-height: 100vh;
+    }
+  }
+
+  .light {
+    --main: #ebebeb;
+    --primary: #2b7fff;
+    --text: #000000;
+  }
+
+  .dark {
+    --main: #111111;
+    --primary: #286ed9;
+    --text: #ffffff;
+  }
 }
