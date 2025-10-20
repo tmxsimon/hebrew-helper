@@ -1,6 +1,6 @@
 export default function Letters() {
   return (
-    <main className="px-page-px pt-4 flex flex-col items-center bg-main text-text">
+    <>
       <div className="max-w-[1000px] w-full mb-8">
         <h2 className="text-2xl font-bold">Hebrew alphabet</h2>
         <img
@@ -33,6 +33,6 @@ export default function Letters() {
           alt="Hebrew keyboard layout"
         />
       </div>
-    </main>
+    </>
   );
 }

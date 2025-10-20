@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-screen h-8 sticky top-0 left-0 flex justify-end items-center bg-primary">
-      <ul className="h-full px-page-px flex items-center text-white">
+      <ul className="h-full flex items-center text-white">
         <li className="h-full flex items-center">
           <button
             className="h-full flex items-center px-4 bg-primary hover:brightness-90"
@@ -14,6 +14,15 @@ export default function Navbar() {
             {theme === "dark" ? <div>Dark</div> : <div>Light</div>}
           </button>
         </li>
+        <li className="h-full flex items-center">
+          <a
+            className="h-full flex items-center px-4 bg-primary hover:brightness-90"
+            href="/words"
+          >
+            Words
+          </a>
+        </li>
+        <li className="h-full flex items-center"></li>
         <li className="h-full flex items-center">
           <a
             className="h-full flex items-center px-4 bg-primary hover:brightness-90"

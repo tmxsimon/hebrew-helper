@@ -1,7 +1,7 @@
-import Word from "../../src/components/Word";
-import Prons from "../../src/components/Prons";
+import Word from "../src/components/Word";
+import Prons from "../src/components/Prons";
 import { useState } from "react";
-import api from "../../src/api";
+import api from "../src/api";
 
 export default function Helper() {
   const [word, setWord] = useState("");
@@ -23,7 +23,7 @@ export default function Helper() {
   }
 
   return (
-    <main className="px-page-px pt-4 flex flex-col items-end bg-main text-text">
+    <div className="flex flex-col items-end w-full">
       <h1 className="text-6xl mb-4">Hebrew Helper</h1>
       <form
         action="get"
@@ -58,6 +58,6 @@ export default function Helper() {
       <div>
         <Prons prons={prons}></Prons>
       </div>
-    </main>
+    </div>
   );
 }

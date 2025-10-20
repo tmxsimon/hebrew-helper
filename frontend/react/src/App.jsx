@@ -1,26 +1,26 @@
 import Navbar from "./components/Navbar";
-import Helper from "../pages/Helper/Helper";
-import Letters from "../pages/Letters/Letters";
-import Links from "../pages/Links/Links";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import Helper from "../pages/Helper";
+import Letters from "../pages/Letters";
+import Links from "../pages/Links";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Words } from "../pages/Words";
+import { LayoutMain } from "../pages/LayoutMain";
 
 function App() {
   return (
     <>
-    <Router>
-        <Navbar></Navbar>
+      <Router>
         <Routes>
-          <Route path="/" element={<Helper></Helper>} />
-          <Route path="/letters" element={<Letters></Letters>} />
-          <Route path="/links" element={<Links></Links>} />
+          <Route element={<LayoutMain />}>
+            <Route index element={<Helper />} />
+            <Route path="/letters" element={<Letters></Letters>} />
+            <Route path="/links" element={<Links></Links>} />
+            <Route path="/words" element={<Words></Words>} />
+          </Route>
         </Routes>
-    </Router>
+      </Router>
     </>
   );
 }
- 
-export default App
+
+export default App;

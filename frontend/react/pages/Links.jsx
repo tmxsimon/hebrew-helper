@@ -1,9 +1,9 @@
-import Link from "../../src/components/Link";
+import Link from "../src/components/Link";
 
 export default function Links() {
   return (
     <>
-      <main className="px-page-px pt-8 flex flex-col items-center bg-main text-text">
+      <>
         <div className="flex flex-col gap-4">
           <Link
             name="doitinHebrew"
@@ -46,7 +46,7 @@ export default function Links() {
             link="https://www.pealim.com/"
           ></Link>
         </div>
-      </main>
+      </>
     </>
   );
 }
