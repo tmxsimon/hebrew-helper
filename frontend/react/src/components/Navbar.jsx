@@ -6,9 +6,9 @@ export default function Navbar() {
   return (
     <nav className="w-screen h-8 sticky top-0 left-0 flex justify-end items-center bg-primary">
       <ul className="h-full flex items-center text-white">
-        <li className="h-full flex items-center">
+        <li className="h-full flex items-center ">
           <button
-            className="h-full flex items-center px-4 bg-primary hover:brightness-90"
+            className="h-full flex items-center px-4 bg-primary hover:brightness-90 cursor-pointer"
             onClick={toggleTheme}
           >
             {theme === "dark" ? <div>Dark</div> : <div>Light</div>}

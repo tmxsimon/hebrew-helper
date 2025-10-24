@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../src/components/Navbar";
 
-export function LayoutMain({ children }) {
+export function LayoutMain() {
   return (
     <div>
       <Navbar />
