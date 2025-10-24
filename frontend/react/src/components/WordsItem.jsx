@@ -66,7 +66,7 @@ export function WordsItem({ word, deleteWord, editWord }) {
   return (
     <>
       <div
-        className={`flex border-primary border-1 p-2 gap-2 w-max max-w-256 h-18 ${isEditMode && "border-3"}`}
+        className={`flex border-primary border-1 p-2 gap-2 w-284 h-18 ${isEditMode && "border-3"}`}
         style={{ position: "relative" }}
       >
         <button
@@ -96,7 +96,7 @@ export function WordsItem({ word, deleteWord, editWord }) {
           onValueChange={setTranslation}
           onKeyDown={handleOnKeyDown}
           placeholder="Translation"
-          className="border-primary border-1 px-2 py-4 w-full min-w-48 h-full flex-3 text-2xl"
+          className="border-primary border-1 px-2 py-4 w-full min-w-48 h-full flex-4 text-2xl"
         />
         <InlineEditable
           value={association}
@@ -112,7 +112,7 @@ export function WordsItem({ word, deleteWord, editWord }) {
           onValueChange={setPronunciation}
           onKeyDown={handleOnKeyDown}
           placeholder="Pronunciation"
-          className="border-primary border-1 px-2 py-4 w-full min-w-48 h-full flex-3 text-2xl"
+          className="border-primary border-1 px-2 py-4 w-full min-w-48 h-full flex-4 text-2xl"
         />
         <InlineEditable
           value={hebrew}
@@ -120,7 +120,7 @@ export function WordsItem({ word, deleteWord, editWord }) {
           onValueChange={setHebrew}
           onKeyDown={handleOnKeyDown}
           placeholder="Hebrew"
-          className="border-primary border-1 px-2 py-4  w-full min-w-48 h-full flex-3 text-2xl"
+          className="border-primary border-1 px-2 py-4 w-full min-w-48 h-full flex-4 text-2xl"
           classNameText="text-end"
         />
         {isEmojiPickerOpen && (

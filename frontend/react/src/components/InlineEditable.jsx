@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const InlineEditable = ({
   value,
+  placeholder,
   isEditMode,
   onValueChange,
   onKeyDown,
@@ -21,6 +22,7 @@ const InlineEditable = ({
     <div className={`flex h-full w-full items-center ${className}`}>
       {isEditMode ? (
         <input
+          placeholder={placeholder}
           className={`w-full ${classNameText}`}
           ref={inputRef}
           onChange={(e) => onValueChange(e.target.value)}
@@ -36,15 +38,9 @@ const InlineEditable = ({
           {value}
         </Link>
       ) : (
-        <input
-          className={`w-full ${classNameText}`}
-          ref={inputRef}
-          onChange={(e) => onValueChange(e.target.value)}
-          onKeyDown={onKeyDown}
-          value={value}
-          readOnly
-          {...inputProps}
-        />
+        <span className={`w-full overflow-hidden ${classNameText}`}>
+          {value}
+        </span>
       )}
     </div>
   );
