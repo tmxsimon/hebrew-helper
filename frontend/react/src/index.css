@@ -10,7 +10,6 @@
 @layer base {
   :root {
     background-color: var(--main);
-    overflow: hidden;
   }
 
   main {
